@@ -8,11 +8,11 @@
 }
 
 :root {
-    --Dark-Slate-Grey: hsl(234, 29%, 20%);
-    --Charcoal-Grey: hsl(235, 18%, 26%);
-    -Grey: hsl(231, 7%, 60%);
+    --Grey: hsl(231, 7%, 60%);
     --White: hsl(0, 0%, 100%);
     --Tomato: hsl(4, 100%, 67%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
 }
 
 body {
@@ -33,29 +33,90 @@ body {
 }
 
 .container-right {
-    padding: 2rem;
+    padding: 0rem 2rem;
 }
 
 .container-right h1 {
     padding-top: 2rem;
     font-size: 3.5rem;
     text-align: center;
+    letter-spacing: 2px;
+    color: var(--Dark-Slate-Grey);
 }
 
 .paragraph {
     width: 400px;
+    font-size: 1rem;
     padding: 2rem 1rem;
+    color: var(--Charcoal-Grey);
 }
 
 .check-right {
+    color: var(--Charcoal-Grey);
     padding: 0rem 0rem 1rem 0rem;
 }
 
 .check-right p{
     display: flex;
+    font-size: 1rem;
     align-items: center;
 }
 
 .img{
     padding: 1rem 1rem;
+}
+
+.title-email{
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 0rem 1rem 0.5rem 1rem;
+    color: var(--Dark-Slate-Grey);
+}
+
+.email{
+    width: 85%;
+    padding: 1rem;
+    outline: none;
+    border-radius: 5px;
+    color: var(--Charcoal-Grey);
+    border: solid 1px var(--Grey);
+    margin: 0rem 1rem 0.5rem 1rem;
+}
+
+.btn-subscribe{
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.btn-subscribe a{
+    width: 340px;
+    padding: 1rem;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--White);
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    background-color: var(--Dark-Slate-Grey);
+}
+
+.btn-subscribe a:hover{
+    background-color: var(--Tomato);
+    box-shadow: 1px 1px 5px var(--Grey);
+}
+
+.description{
+    padding: 2rem 0;
+    color: var(--Grey);
+}
+
+.attribution{
+    color: var(--Grey);
+}
+
+.attribution a{
+    padding: 0 0.5rem;
+    color: var(--White);
+    text-decoration: none;
 }
